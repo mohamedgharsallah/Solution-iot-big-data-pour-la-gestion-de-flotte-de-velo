@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-time Data Dashboard</title>
+    
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+	<div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Histogram</div>
+                    <div class="card-body">
+                        <canvas id="avg-duration-histogram"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Popular Station</div>
+                    <div class="card-body">
+                        <table id="popular-station-table">
+                            <thead>
+                                <tr>
+                                    <th>Start Station Name</th>
+                                    <th>End Station Name</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>jpeg
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">ESP32 DATA </div>
+                    <div class="card-body">
+                        <table id="mqtt-table">
+                            <thead>
+                                <tr>
+                                    <th>DATA</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Popular Bike</div>
+                    <div class="card-body">
+                        <table id="popular-bikes-table">
+                            <thead>
+                                <tr>
+                                    <th>Bike ID</th>
+                                    <th>Number of Trips</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
